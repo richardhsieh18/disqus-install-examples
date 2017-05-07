@@ -1,6 +1,6 @@
 # Jekyll installation instructions
 
-1. Add a variable called **comments** to the [YAML Front Matter](https://github.com/jekyll/jekyll/wiki/YAML-Front-Matter) and set its value to **true**. A sample front matter might look like:
+1. Add a variable called **comments** to the [YAML Front Matter](https://github.com/jekyll/jekyll/wiki/YAML-Front-Matter) and set its value to **true** //should be at (_layouts/post.html).A sample front matter might look like:
     
     ```html
     ---
@@ -10,7 +10,7 @@
     ---
     ```
 
-2. In between a `{% if page.comments %}` and a `{% endif %}` tag, add the [Universal Embed Code](https://help.disqus.com/customer/portal/articles/472097) in the appropriate template where you'd like Disqus to load. 
+2. In between a `{% if page.comments %}` and a `{% endif %}` tag <--//nonessential, add the [Universal Embed Code](https://help.disqus.com/customer/portal/articles/472097) in the appropriate template where you'd like Disqus to load. 
 
     Universal Embed Code:
 
@@ -31,7 +31,7 @@
             var d = document, s = d.createElement('script');
             
             s.src = '//EXAMPLE.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
-            
+                       
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
